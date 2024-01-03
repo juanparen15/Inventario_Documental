@@ -467,7 +467,8 @@
         function validarCaracter(event) {
             var input = event.key;
             // Usar una expresión regular para permitir letras, números y el guión (-)
-            var regex = /^[a-zA-Z0-9\- ]$/;
+            // var regex = /^[a-zA-Z0-9\- ]$/;
+            var regex = /^[a-zA-Z0-9ñÑ\- ]$/;
             if (!regex.test(input)) {
                 event.preventDefault(); // Prevenir la entrada del carácter no válido
                 $('#notaModal').modal('show'); // Mostrar el modal de validación
