@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md-10">
-          <h1 class="mb-2">{{$empresa->nombre}}</h1>
+          <h1 class="mb-6">{{$empresa->nombre}}</h1>
         </div>
       </div>
     </div>
