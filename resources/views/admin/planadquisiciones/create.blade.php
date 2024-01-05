@@ -3,7 +3,6 @@
 @section('style')
 
     <!-- Select2 -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     {!! Html::style('adminlte/plugins/select2/css/select2.min.css') !!}
     {!! Html::style('adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') !!}
 @endsection
