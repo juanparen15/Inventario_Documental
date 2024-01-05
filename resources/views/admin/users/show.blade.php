@@ -111,7 +111,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="text-center mb-3">
-                                                <img src="{{ asset('adminlte/dist/img/' . auth()->user()->avatar) }}"
+                                                <img src="{{ secure_asset('adminlte/dist/img/' . auth()->user()->avatar) }}"
                                                     class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
                                                     alt="">
                                             </div>

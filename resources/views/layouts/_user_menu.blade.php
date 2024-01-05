@@ -1,14 +1,14 @@
 <li class="nav-item dropdown user-menu">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
 
-      <img src="{{asset('adminlte/dist/img/'.auth()->user()->avatar)}}" class="user-image img-circle elevation-2" alt="{{Auth::user()->name}}">
+      <img src="{{secure_asset('adminlte/dist/img/'.auth()->user()->avatar)}}" class="user-image img-circle elevation-2" alt="{{Auth::user()->name}}">
 
       <span class="d-none d-md-inline">{{Auth::user()->name}}</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
       <!-- User image -->
       <li class="user-header bg-primary">
-        <img src="{{asset('adminlte/dist/img/'.auth()->user()->avatar)}}" class="img-circle elevation-2" alt="{{Auth::user()->name}}">
+        <img src="{{secure_asset('adminlte/dist/img/'.auth()->user()->avatar)}}" class="img-circle elevation-2" alt="{{Auth::user()->name}}">
 
         <p>
           {{Auth::user()->name}}

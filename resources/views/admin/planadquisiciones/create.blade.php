@@ -3,8 +3,10 @@
 @section('style')
 
     <!-- Select2 -->
-    {!! Html::style('adminlte/plugins/select2/css/select2.min.css') !!}
-    {!! Html::style('adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') !!}
+    {{-- {!! Html::style('adminlte/plugins/select2/css/select2.min.css') !!}
+    {!! Html::style('adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') !!} --}}
+    {!! Html::style('https://adminlte/plugins/select2/css/select2.min.css') !!}
+    {!! Html::style('https://adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') !!}
 @endsection
 @section('content')
     <!-- Content Wrapper. Contains page content -->
@@ -318,7 +320,8 @@
 @endsection
 @section('script')
     <!-- Select2 -->
-    {!! Html::script('adminlte/plugins/select2/js/select2.full.min.js') !!}
+    {{-- {!! Html::script('adminlte/plugins/select2/js/select2.full.min.js') !!} --}}
+    {!! Html::script('https://adminlte/plugins/select2/js/select2.full.min.js') !!}
     <!-- Tu otro script personalizado aquí -->
 
     <script>

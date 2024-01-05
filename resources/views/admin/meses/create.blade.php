@@ -35,7 +35,7 @@
  </div>
 @stop
 @section('js')
-  <script src="{{asset('vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js')}}"></script>
+  <script src="{{secure_asset('vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js')}}"></script>
   <script>
        $(document).ready( function() {
            $("#nommes").stringToSlug({
