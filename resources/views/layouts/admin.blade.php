@@ -78,7 +78,7 @@
 
 
     {{--  https://igorescobar.github.io/jQuery-Mask-Plugin/  --}}
-    <script src="{{ secure_asset('maskedinput/dist/jquery.mask.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('maskedinput/dist/jquery.mask.js') }}" type="text/javascript"></script>
 
 </body>
 

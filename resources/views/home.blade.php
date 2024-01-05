@@ -400,7 +400,7 @@
             });
         </script>
 
-        <script src="{{ secure_asset('adminlte/plugins/chart.js/Chart.min.js') }}"></script>
+        <script src="{{ asset('adminlte/plugins/chart.js/Chart.min.js') }}"></script>
 
         <script>
             $(function() {
