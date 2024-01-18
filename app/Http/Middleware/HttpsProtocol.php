@@ -13,11 +13,20 @@ class HttpsProtocol
      * @param  \Closure  $next
      * @return mixed
      */
+    // public function handle($request, Closure $next)
+    // {
+    //     if (!$request->secure()) {
+    //         return redirect()->secure($request->getRequestUri());
+    //     }
+    //     return $next($request);
+    // }
+
     public function handle($request, Closure $next)
     {
-        if(!$request->secure()){
+        if (app()->environment('production') && !$request->secure()) {
             return redirect()->secure($request->getRequestUri());
         }
+
         return $next($request);
     }
 }
