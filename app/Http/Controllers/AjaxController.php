@@ -3,11 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Area;
-use App\Clase;
 use App\Familia;
-use App\Producto;
-use App\Tipoproceso;
-use App\Planadquisicione;
 use Illuminate\Http\Request;
 
 class AjaxController extends Controller

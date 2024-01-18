@@ -82,12 +82,8 @@ Route::resource('codigo', 'RequiproyectoController')->except([
 ])->names('admin.proyectos');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('obtener_familias', 'AjaxController@obtener_familias')->name('obtener_familias');
-Route::get('obtener_codigo', 'AjaxController@obtener_codigo')->name('obtener_codigo');
-// Route::get('obtener_clases', 'AjaxController@obtener_clases')->name('obtener_clases');
-// Route::get('obtener_productos', 'AjaxController@obtener_productos')->name('obtener_productos');
-// route::get('planadquisiciones/{planadquisicion}/agregar_producto', 'PlanadquisicioneController@agregar_producto')->name('agregar_producto');
-// route::post('planadquisiciones/{planadquisicion}/agregar_producto_store', 'PlanadquisicioneController@agregar_producto_store')->name('agregar_producto_store');
+Route::get('obtener_familias', 'AjaxController@obtener_familias')->name('obtener_familias')->middleware('https');
+Route::get('obtener_codigo', 'AjaxController@obtener_codigo')->name('obtener_codigo')->middleware('https');
 Route::resource('users', 'UserController')->names('users');
 // ================== rutas para importar datos 
 Route::post('areas_import', 'ImportExcelController@areas_import')->name('areas.import.excel');
@@ -109,14 +105,7 @@ Route::get('inventario/areas/{areaId}', 'PlanadquisicioneController@indexByArea'
 Route::get('inventario/onlyadmin', 'PlanadquisicioneController@showOnlyAdmin')->name('planadquisiciones.showOnlyAdmin');
 Route::get('inventario', 'PlanadquisicioneController@index')->name('planadquisiciones.index');
 Route::get('inventario/area/{areaId}', 'PlanadquisicioneController@indexByArea')->name('planadquisiciones.indexByArea');
-
-// Route::get('/chart', 'ChartController@handleChart')->name('inventarioDocumental.handleChart');
-Route::get('/chart', [ChartController::class, 'chart'])->name('/chart');
-// Route::get('home', [HomeController::class, 'index']);
-// Route::middleware(['role:Admin'])->group(function () {
-//     // Rutas que solo los admins pueden acceder
-//     Route::get('/users', 'UserController@index');
-// });
+// Route::get('/chart', [ChartController::class, 'chart'])->name('/chart');
 // Route::middleware(['role:supervisor'])->group(function () {
 //     Route::get('/users', 'UserController@index');
 // });
