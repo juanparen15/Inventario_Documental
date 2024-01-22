@@ -82,8 +82,8 @@ Route::resource('codigo', 'RequiproyectoController')->except([
 ])->names('admin.proyectos');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('obtener_familias', 'AjaxController@obtener_familias')->name('obtener_familias')->middleware('https');
-Route::get('obtener_codigo', 'AjaxController@obtener_codigo')->name('obtener_codigo')->middleware('https');
+Route::get('/get-familias/{segmento_id}', 'AjaxController@obtener_familias');
+Route::get('/get-codigo/{area_id}', 'AjaxController@obtener_codigo');
 Route::resource('users', 'UserController')->names('users');
 // ================== rutas para importar datos 
 Route::post('areas_import', 'ImportExcelController@areas_import')->name('areas.import.excel');
