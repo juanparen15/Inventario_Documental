@@ -150,10 +150,10 @@
                                 <select class="select2 @error('familias_id') is-invalid @enderror" name="familias_id"
                                     id="familias_id" style="width: 100%;">
                                     @foreach ($familias as $familia)
-                                <option value="{{$familia->id}}"
-                                    {{ old('familias_id', $inventario->familias_id) == $familia->id ? 'selected' : ''}}>
-                                    {{$familia->detfamilia}}</option>
-                                @endforeach
+                                        <option value="{{ $familia->id }}"
+                                            {{ old('familias_id', $inventario->familias_id) == $familia->id ? 'selected' : '' }}>
+                                            {{ $familia->detfamilia }}</option>
+                                    @endforeach
                                 </select>
                                 @error('familias_id')
                                     <span class="invalid-feedback" role="alert">
@@ -292,7 +292,8 @@
                             <label>NOTAS:</label>
                             <div class="input-group sm-3">
                                 <input placeholder="Escriba una nota" type="text" class="form-control" name="nota"
-                                    id="nota" value="{{ old('nota', $inventario->nota) }}" required onkeypress="return validarCaracter(event)">
+                                    id="nota" value="{{ old('nota', $inventario->nota) }}" required
+                                    onkeypress="return validarCaracter(event)">
                             </div>
                         </div>
                     </div>
@@ -389,24 +390,31 @@
 
     <script>
         var segmento_id = $('#segmento_id');
-        var familia_id = $('#familias_id');
-        segmento_id.change(function() {
-            $.ajax({
-                url: "{{ route('obtener_familias') }}",
-                method: 'GET',
-                data: {
-                    segmento_id: segmento_id.val(),
-                },
-                success: function(data) {
-                    familia_id.empty();
-                    familia_id.append(
-                        '<option disabled selected>Seleccione un Tipo de Subserie Documental:</option>'
-                    );
-                    $.each(data, function(index, element) {
-                        familia_id.append('<option value="' + element.id + '">' + element
-                            .detfamilia + '</option>')
-                    });
+        var familias_id = $('#familias_id');
 
+        $(document).ready(function() {
+            segmento_id.change(function() {
+                var segmento_id = $(this).val();
+                console.log("Cambio en segmento_id detectado");
+                if (segmento_id) {
+                    $.get('/get-familias/' + segmento_id, function(data) {
+                        $('#familias_id').empty();
+
+
+                        $('#familias_id').append(
+                            '<option disabled selected>Seleccione un Tipo de Subserie Documental:</option>'
+                        );
+                        $.each(data, function(key, value) {
+                            $('#familias_id').append('<option value="' + value.id +
+                                '" name="' + value.detfamilia + '">' + value
+                                .detfamilia + '</option>');
+                        });
+                        // Selecciona automáticamente la primera opción
+                        $('#familias_id').val($('#familias_id option:first').val());
+                    });
+                } else {
+                    // Si no se selecciona ninguna ciudad, limpia la lista de estandares
+                    $('#familias_id').empty();
                 }
             });
         });
