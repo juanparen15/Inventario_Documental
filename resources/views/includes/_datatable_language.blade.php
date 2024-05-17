@@ -20,3 +20,23 @@
         });
     });
 </script>
+
+{{-- <script>
+    $(function() {
+        $('#example2').DataTable({
+            "serverSide": true,
+            "ajax": {
+                "url": '/inventario',
+                "type": 'POST'
+            },
+            "paging": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+            }
+        });
+    });
+</script> --}}

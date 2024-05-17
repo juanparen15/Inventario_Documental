@@ -286,11 +286,6 @@ class PlanadquisicioneController extends Controller
         $ultimoId = Planadquisicione::max('id');
 
         $slugWithId = $slug . '-' . $ultimoId;
-
-        // Contrato 435 del 2023
-        // // Agregar el ID al slug
-        // $slugWithId = $slug . '-' . $counter;
-
         $inventario->update(array_merge($request->all(), [
             'fechaInicial' => $fechaInicial,
             'fechaFinal' => $fechaFinal,

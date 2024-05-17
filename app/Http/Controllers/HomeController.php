@@ -149,23 +149,24 @@ class HomeController extends Controller
 
 
             $adquisiciones = Planadquisicione::where('user_id', auth()->user()->id)->select(
-                'area_id',
+                'segmento_id',
                 DB::raw('count(*) as adq'),
-                DB::raw('MAX(areas.nomarea) as area_name'),
+                // DB::raw('MAX(areas.nomarea) as area_name'),
+                DB::raw('MAX(segmentos.detsegmento) as serie_name'),
                 // ->groupby(DB::raw("carpeta"))
                 // ->pluck('count')
                 // DB::raw("DATE_FORMAT(fechaInicial,'%M %Y') as anyo"),
                 DB::raw("count(carpeta) as adq")
             )
-                ->join('areas', 'planadquisiciones.area_id', '=', 'areas.id') // Realiza una join con la tabla de áreas
+                ->join('segmentos', 'planadquisiciones.segmento_id', '=', 'segmentos.id') // Realiza una join con la tabla de áreas
                 // DB::raw("count(area_id) as area_adq"))
                 // DB::raw("DATE_FORMAT(fechaInicial,'%M %Y') as anyo"))
-                ->groupBy(DB::raw("area_id"))
+                ->groupBy(DB::raw("segmento_id"))
                 ->get();
             // Accede a los datos de la relación
             foreach ($adquisiciones as $adq) {
-                $area = $adq->area; // "area" es el nombre del método de relación en el modelo Planadquisicione
-                $nombreArea = $area->nomarea; // Accede a los campos de la relación (ejemplo: "nomarea")
+                $segmento = $adq->segmento; // "area" es el nombre del método de relación en el modelo Planadquisicione
+                $nombreSerie = $segmento->detsegmento; // Accede a los campos de la relación (ejemplo: "nomarea")
                 // Puedes usar $nombreArea en tu lógica aquí
             }
 
