@@ -108,6 +108,28 @@ class HomeController extends Controller
                 // Puedes usar $nombreArea en tu lógica aquí
             }
 
+            $adquisicionesSeries = Planadquisicione::select(
+                'segmento_id',
+                DB::raw('count(*) as adq'),
+                // DB::raw('MAX(areas.nomarea) as area_name'),
+                DB::raw('MAX(segmentos.detsegmento) as serie_name'),
+                // ->groupby(DB::raw("carpeta"))
+                // ->pluck('count')
+                // DB::raw("DATE_FORMAT(fechaInicial,'%M %Y') as anyo"),
+                DB::raw("count(carpeta) as adq")
+            )
+                ->join('segmentos', 'planadquisiciones.segmento_id', '=', 'segmentos.id') // Realiza una join con la tabla de áreas
+                // DB::raw("count(area_id) as area_adq"))
+                // DB::raw("DATE_FORMAT(fechaInicial,'%M %Y') as anyo"))
+                ->groupBy(DB::raw("segmento_id"))
+                ->get();
+            // Accede a los datos de la relación
+            foreach ($adquisicionesSeries as $adq) {
+                $segmento = $adq->segmento; // "area" es el nombre del método de relación en el modelo Planadquisicione
+                $nombreSerie = $segmento->detsegmento; // Accede a los campos de la relación (ejemplo: "nomarea")
+                // Puedes usar $nombreArea en tu lógica aquí
+            }
+
             $carpetas = [];
 
             foreach ($adquisiciones2 as $adq) {
@@ -181,6 +203,6 @@ class HomeController extends Controller
 
 
 
-        return view("home", ["data" => json_encode($carpetas)], compact('users', 'products', 'clases', 'segmentos', 'familias', 'adquisiciones', 'adquisiciones1',  'adquisiciones3', 'dependencias', 'areas', 'planes'));
+        return view("home", ["data" => json_encode($carpetas)], compact('users', 'products', 'clases', 'segmentos', 'familias', 'adquisiciones', 'adquisicionesSeries', 'adquisiciones1',  'adquisiciones3', 'dependencias', 'areas', 'planes'));
     }
 }
