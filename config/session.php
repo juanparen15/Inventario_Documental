@@ -124,10 +124,11 @@ return [
     |
     */
 
-    'cookie' => env(
-        'SESSION_COOKIE',
-        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
-    ),
+    // 'cookie' => env(
+    //     'SESSION_COOKIE',
+    //     Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+    // ),
+    'cookie' => env('SESSION_COOKIE', 'laravel_session'),
 
     /*
     |--------------------------------------------------------------------------
@@ -167,7 +168,8 @@ return [
     */
 
     // 'secure' => env('SESSION_SECURE_COOKIE', null),
-    'secure' => true,
+    'secure' => env('SESSION_SECURE_COOKIE', false),
+    // 'secure' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -180,8 +182,8 @@ return [
     |
     */
 
-    // 'http_only' => true,
-    'http_only' => false,
+    'http_only' => true,
+    // 'http_only' => false,
 
     /*
     |--------------------------------------------------------------------------
