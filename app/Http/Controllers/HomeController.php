@@ -43,6 +43,7 @@ class HomeController extends Controller
         $adquisiciones1 = Planadquisicione::all()->count();
         $adquisiciones3 = Planadquisicione::all()->count();
         $adquisiciones2 = Planadquisicione::with('area')->get();
+        $adquisicionesSeries = Planadquisicione::all()->count();
 
 
 
@@ -170,7 +171,7 @@ class HomeController extends Controller
 
 
 
-            $adquisiciones = Planadquisicione::where('user_id', auth()->user()->id)->select(
+            $adquisicionesSeries = Planadquisicione::where('user_id', auth()->user()->id)->select(
                 'segmento_id',
                 DB::raw('count(*) as adq'),
                 // DB::raw('MAX(areas.nomarea) as area_name'),
@@ -186,7 +187,7 @@ class HomeController extends Controller
                 ->groupBy(DB::raw("segmento_id"))
                 ->get();
             // Accede a los datos de la relación
-            foreach ($adquisiciones as $adq) {
+            foreach ($adquisicionesSeries as $adq) {
                 $segmento = $adq->segmento; // "area" es el nombre del método de relación en el modelo Planadquisicione
                 $nombreSerie = $segmento->detsegmento; // Accede a los campos de la relación (ejemplo: "nomarea")
                 // Puedes usar $nombreArea en tu lógica aquí
