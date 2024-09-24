@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://idamptoboy.com/assets/logo.png" width="400" alt="IDAM Puerto Boyacá Logo">
+    <img src="https://www.idamptoboy.com/homeland/images/about.jpg" width="400" alt="IDAM Puerto Boyacá Logo">
 </p>
 
 <p align="center">
@@ -24,7 +24,6 @@
 ## Tecnologías Utilizadas
 
 - **[Laravel](https://laravel.com/)**: Framework PHP para el backend, utilizado para construir el sistema y su arquitectura robusta.
-- **[Voyager Admin](https://voyager.devdojo.com/)**: Herramienta de administración para la gestión de contenido y usuarios.
 - **[Jetstream](https://jetstream.laravel.com/)**: Proporciona la interfaz de usuario para la autenticación y el manejo de usuarios.
 - **Base de datos**: MySQL es utilizada para almacenar toda la información relacionada con los documentos, usuarios y actividades del sistema.
 - **Almacenamiento de archivos**: Los documentos electrónicos se almacenan en un sistema de archivos seguro y están accesibles mediante descargas controladas.
@@ -43,5 +42,5 @@ Sigue estos pasos para instalar el proyecto localmente:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/username/idamptoboy.git
-   cd idamptoboy
+   git clone https://github.com/juanparen15/Inventario_Documental.github.io.git
+   cd Inventario_Documental
