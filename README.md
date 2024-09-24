@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/username/idamptoboy/actions"><img src="https://github.com/username/idamptoboy/actions/workflows/ci.yml/badge.svg" alt="Build Status"></a>
-<a href="https://github.com/username/idamptoboy/releases"><img src="https://img.shields.io/github/v/release/username/idamptoboy" alt="Latest Release"></a>
-<a href="https://github.com/username/idamptoboy/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
-<a href="https://packagist.org/packages/username/idamptoboy"><img src="https://poser.pugx.org/username/idamptoboy/d/total.svg" alt="Total Downloads"></a>
+<a href="https://github.com/juanparen15/Inventario_Documental/actions"><img src="https://github.com/juanparen15/Inventario_Documental/actions/workflows/ci.yml/badge.svg" alt="Build Status"></a>
+<a href="https://github.com/juanparen15/Inventario_Documental/releases"><img src="https://img.shields.io/github/v/release/juanparen15/Inventario_Documental" alt="Latest Release"></a>
+<a href="https://github.com/juanparen15/Inventario_Documental/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
+<a href="https://packagist.org/packages/juanparen15/Inventario_Documental"><img src="https://poser.pugx.org/juanparen15/Inventario_Documental/d/total.svg" alt="Total Downloads"></a>
 </p>
 
 # IDAM Puerto Boyacá
