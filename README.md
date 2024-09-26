@@ -1,79 +1,46 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+    <img src="https://www.idamptoboy.com/homeland/images/about.jpg" width="400" alt="IDAM Puerto Boyacá Logo">
 </p>
 
-## About Laravel
+<p align="center">
+<a href="https://github.com/juanparen15/Inventario_Documental/actions"></a>
+<a href="https://github.com/juanparen15/Inventario_Documental/releases"><img src="https://img.shields.io/github/v/release/juanparen15/Inventario_Documental" alt="Latest Release"></a>
+<a href="https://github.com/juanparen15/Inventario_Documental/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
+<a href="https://packagist.org/packages/juanparen15/Inventario_Documental"><img src="https://poser.pugx.org/juanparen15/Inventario_Documental/d/total.svg" alt="Total Downloads"></a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# IDAM Puerto Boyacá
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**IDAM Puerto Boyacá** es una plataforma web que centraliza la gestión de archivos y documentos de la Alcaldía Municipal de Puerto Boyacá. El sistema permite la gestión de archivos físicos y electrónicos, organizados según las normativas vigentes para garantizar un manejo eficiente, transparente y accesible de la información.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Funcionalidades Principales
 
-## Learning Laravel
+- **Gestión de archivos físicos y electrónicos**: Registro y administración de documentos físicos y digitales asociados a diferentes áreas administrativas y oficinas productoras.
+- **Consulta y visualización**: Acceso fácil a los documentos mediante criterios como nombre de serie, subserie, fechas, número de folios, soporte y más.
+- **Descarga de archivos electrónicos**: Descarga de archivos PDF directamente desde la plataforma para facilitar el acceso a documentos importantes.
+- **Auditoría y control**: Registro de entrada y actualización de documentos, permitiendo un control completo sobre las modificaciones realizadas en el sistema.
+- **Gestión de usuarios**: Asignación de roles para garantizar un acceso controlado y seguro según el nivel de autorización.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tecnologías Utilizadas
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **[Laravel](https://laravel.com/)**: Framework PHP para el backend, utilizado para construir el sistema y su arquitectura robusta.
+- **[Jetstream](https://jetstream.laravel.com/)**: Proporciona la interfaz de usuario para la autenticación y el manejo de usuarios.
+- **Base de datos**: MySQL es utilizada para almacenar toda la información relacionada con los documentos, usuarios y actividades del sistema.
+- **Almacenamiento de archivos**: Los documentos electrónicos se almacenan en un sistema de archivos seguro y están accesibles mediante descargas controladas.
 
-## Laravel Sponsors
+## Requisitos del Sistema
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- PHP >= 7.4.19
+- Composer
+- MySQL >= 5.7
+- Node.js y NPM (para el manejo de activos y compilación de JavaScript)
+- Extensiones de PHP: `fileinfo`, `openssl`, `pdo`, `mbstring`, `tokenizer`, `xml`, `ctype`, `json`
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+## Instalación
 
-## Contributing
+Sigue estos pasos para instalar el proyecto localmente:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Observatorio
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/juanparen15/Inventario_Documental.github.io.git
+   cd Inventario_Documental
