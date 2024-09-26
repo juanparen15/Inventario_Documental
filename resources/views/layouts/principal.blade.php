@@ -37,6 +37,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lumen/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -97,7 +100,7 @@
     @yield('content')
 
 
-    <footer class="site-footer">
+    {{-- <footer class="site-footer"> --}}
         {{--  <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -158,7 +161,7 @@
           
         </div>
       </div>  --}}
-    </footer>
+    {{-- </footer> --}}
 
     </div>
 

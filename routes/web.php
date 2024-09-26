@@ -111,3 +111,10 @@ Route::get('inventario/area/{areaId}', 'PlanadquisicioneController@indexByArea')
 // });
 
 
+use App\Http\Controllers\Auth\CustomForgotPasswordController;
+
+// Ruta para mostrar el formulario de solicitud de enlace de restablecimiento de contraseña
+Route::get('password/reset', [CustomForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+
+// Ruta para enviar el enlace de restablecimiento de contraseña
+Route::post('password/email', [CustomForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
