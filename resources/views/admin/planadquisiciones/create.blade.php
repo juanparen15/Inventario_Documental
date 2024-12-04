@@ -284,7 +284,7 @@
                         <div id="archivoPdfField" class="col-md-4" style="display:none;">
                             <label>ARCHIVO PDF:</label>
                             <i class="btn btn-primary fas fa-question"
-                                onclick="showInfo('Adjuntar el documento en formato PDF y no puede exceder los 5 MB')"></i>
+                                onclick="showInfo('Adjuntar el documento en formato PDF y no puede exceder los 20 MB')"></i>
                             <div class="input-group mb-3">
                                 <input enctype="multipart/form-data" class="btn btn-primary form-control" type="file"
                                     name="archivo_pdf" id="archivoPdfInput" accept="application/pdf"
@@ -292,7 +292,7 @@
                             </div>
                             <!-- Mensajes de error -->
                             <p id="fileTypeError" style="display:none; color:red;">El archivo debe ser un PDF.</p>
-                            <p id="fileSizeError" style="display:none; color:red;">El archivo no debe exceder los 5 MB.
+                            <p id="fileSizeError" style="display:none; color:red;">El archivo no debe exceder los 20 MB.
                             </p>
 
                         </div>
@@ -734,7 +734,7 @@
                 }
 
                 // Verificar si el tamaño del archivo es mayor a 5 MB
-                if (fileSize > 5 * 1024 * 1024) { // 5 MB en bytes
+                if (fileSize > 20 * 1024 * 1024) { // 20 MB en bytes
                     fileSizeError.style.display = 'block';
                     fileInput.value = ''; // Resetea el input para eliminar el archivo inválido
                     return;

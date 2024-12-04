@@ -122,6 +122,11 @@ class Planadquisicione extends Model
         return $this->belongsTo(TipoOtro::class);
     }
 
+    // Modelo Area
+    public function dependencia()
+    {
+        return $this->belongsTo(Dependencia::class, 'dependencia_id');
+    }
     //Relacion Muchos a Muchos
 
     // public function detalleplanadquisiciones(){

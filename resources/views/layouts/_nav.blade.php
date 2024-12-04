@@ -158,19 +158,6 @@
                     </li>
 
                     <!-- <li class="nav-item">
-            <a href="{{ route('admin.meses.index') }}" class="nav-link 
-            {!! active_class(route('admin.meses.index')) !!}
-            ">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Meses
-              </p>
-            </a>
-          </li>   -->
-
-
-
-                    <!-- <li class="nav-item">
             <a href="{{ route('admin.productos.index') }}" class="nav-link 
             {!! active_class(route('admin.productos.index')) !!}
             ">
@@ -284,6 +271,17 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route('admin.actos.index') }}"
+                            class="nav-link 
+            {!! active_class(route('admin.actos.index')) !!}
+            ">
+                            <i class="nav-icon fas fa-parking"></i>
+                            <p>
+                                Actos Administrativos
+                            </p>
+                        </a>
+                    </li>
                 @endif
                 @if (auth()->user()->hasRole('Admin'))
                     <li class="nav-item">
@@ -294,6 +292,17 @@
                             <i class="nav-icon fas fa-parking"></i>
                             <p>
                                 Inventario
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('admin.actos.index') }}"
+                            class="nav-link 
+            {!! active_class(route('admin.actos.index')) !!}
+            ">
+                            <i class="nav-icon fas fa-parking"></i>
+                            <p>
+                                Actos Administrativos
                             </p>
                         </a>
                     </li>

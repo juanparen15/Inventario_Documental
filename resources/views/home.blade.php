@@ -106,58 +106,58 @@
                         </div>
                         <!-- ./col -->
                         <!-- <div class="col-lg-3 col-6">
-                                                                                                                                                                                                                                                                             small box
-                                                                                                                                                                                                                                                                            <div class="small-box bg-success">
-                                                                                                                                                                                                                                                                                <div class="inner">
-                                                                                                                                                                                                                                                                                    <h3>{{ $products }}</h3>
-                                                                                                                                                                                                                                                                                    <p>Productos</p>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <div class="icon">
-                                                                                                                                                                                                                                                                                    <i class="fab fa-bitcoin"></i>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <a href="{{ route('admin.productos.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
-                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                             small box
+                                                                                                                                                                                                                                                                                                                            <div class="small-box bg-success">
+                                                                                                                                                                                                                                                                                                                                <div class="inner">
+                                                                                                                                                                                                                                                                                                                                    <h3>{{ $products }}</h3>
+                                                                                                                                                                                                                                                                                                                                    <p>Productos</p>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <div class="icon">
+                                                                                                                                                                                                                                                                                                                                    <i class="fab fa-bitcoin"></i>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <a href="{{ route('admin.productos.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
+                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                        </div> -->
                         <!-- ./col -->
                         <!-- <div class="col-lg-3 col-6">
-                                                                                                                                                                                                                                                                             small box --
-                                                                                                                                                                                                                                                                            <div class="small-box bg-warning">
-                                                                                                                                                                                                                                                                                <div class="inner">
-                                                                                                                                                                                                                                                                                    <h3>{{ $clases }}</h3>
-                                                                                                                                                                                                                                                                                    <p>Clases</p>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <div class="icon">
-                                                                                                                                                                                                                                                                                    <i class="fas fa-calendar-alt"></i>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <a href="{{ route('admin.clases.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
-                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                             small box --
+                                                                                                                                                                                                                                                                                                                            <div class="small-box bg-warning">
+                                                                                                                                                                                                                                                                                                                                <div class="inner">
+                                                                                                                                                                                                                                                                                                                                    <h3>{{ $clases }}</h3>
+                                                                                                                                                                                                                                                                                                                                    <p>Clases</p>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <div class="icon">
+                                                                                                                                                                                                                                                                                                                                    <i class="fas fa-calendar-alt"></i>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <a href="{{ route('admin.clases.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
+                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                        </div> -->
                         <!-- <div class="col-lg-3 col-6">
-                                                                                                                                                                                                                                                                             small box
-                                                                                                                                                                                                                                                                            <div class="small-box bg-dark">
-                                                                                                                                                                                                                                                                                <div class="inner">
-                                                                                                                                                                                                                                                                                    <h3>{{ $familias }}</h3>
-                                                                                                                                                                                                                                                                                    <p>Familias</p>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <div class="icon">
-                                                                                                                                                                                                                                                                                    <i class="fas fa-users"></i>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <a href="{{ route('admin.familias.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
-                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                             small box
+                                                                                                                                                                                                                                                                                                                            <div class="small-box bg-dark">
+                                                                                                                                                                                                                                                                                                                                <div class="inner">
+                                                                                                                                                                                                                                                                                                                                    <h3>{{ $familias }}</h3>
+                                                                                                                                                                                                                                                                                                                                    <p>Familias</p>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <div class="icon">
+                                                                                                                                                                                                                                                                                                                                    <i class="fas fa-users"></i>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <a href="{{ route('admin.familias.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
+                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                        </div> -->
                         <!-- <div class="col-lg-3 col-6">
-                                                                                                                                                                                                                                                                             small box
-                                                                                                                                                                                                                                                                            <div class="small-box bg-purple">
-                                                                                                                                                                                                                                                                                <div class="inner">
-                                                                                                                                                                                                                                                                                    <h3>{{ $segmentos }}</h3>
-                                                                                                                                                                                                                                                                                    <p>Segmentos</p>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <div class="icon">
-                                                                                                                                                                                                                                                                                    <i class="fas fa-chess-king"></i>
-                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                <a href="{{ route('admin.segmentos.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
-                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                                                                                             small box
+                                                                                                                                                                                                                                                                                                                            <div class="small-box bg-purple">
+                                                                                                                                                                                                                                                                                                                                <div class="inner">
+                                                                                                                                                                                                                                                                                                                                    <h3>{{ $segmentos }}</h3>
+                                                                                                                                                                                                                                                                                                                                    <p>Segmentos</p>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <div class="icon">
+                                                                                                                                                                                                                                                                                                                                    <i class="fas fa-chess-king"></i>
+                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                <a href="{{ route('admin.segmentos.index') }}" class="small-box-footer">Ver Todo <i class="fas fa-arrow-circle-right"></i></a>
+                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                        </div> -->
                         <!-- ./col -->
                         <div class="col-lg-3 col-6">
                             <!-- small box -->
@@ -209,6 +209,29 @@
                                     </div>
                                 @endcan
                             </div>
+
+                            <figure class="highcharts-figure">
+                                <div id="containerDependenciaColumn"></div>
+                                <div id="sliders">
+                                    <table>
+                                        <tr>
+                                            <td><label for="alpha">Angulo Alpha</label></td>
+                                            <td><input id="alpha" type="range" min="0" max="45"
+                                                    value="15" /> <span id="alpha-value" class="value"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="beta">Angulo Beta</label></td>
+                                            <td><input id="beta" type="range" min="-45" max="45"
+                                                    value="15" /> <span id="beta-value" class="value"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="depth">Profundidad</label></td>
+                                            <td><input id="depth" type="range" min="20" max="100"
+                                                    value="50" /> <span id="depth-value" class="value"></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </figure>
 
                             <figure class="highcharts-figure">
                                 <div id="container"></div>
@@ -395,6 +418,112 @@
 
                 }]
             });
+        </script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+        <script>
+            const chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'containerDependenciaColumn',
+                    type: 'column',
+                    options3d: {
+                        enabled: true,
+                        alpha: 0,
+                        beta: 0,
+                        depth: 20,
+                        viewDistance: 25
+                    }
+                },
+                credits: false,
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    title: {
+                        enabled: false
+                    }
+                },
+                // tooltip: {
+                //     pointFormat: 'Carpetas: <b>{point.percentage:.1f}%</b>'
+                // },
+                tooltip: {
+                    headerFormat: '<b>{point.key}</b><br>',
+                    pointFormat: 'Carpetas: {point.y}'
+                },
+                title: {
+                    text: 'Registro de Carpeta por Dependencia',
+                    align: 'left'
+                },
+                subtitle: {
+                    text: '',
+                    align: 'left'
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    column: {
+                        depth: 25
+                    }
+                },
+                accessibility: {
+                    point: {
+                        valueSuffix: '%'
+                    }
+                },
+                // plotOptions: {
+                //     column: {
+                //         allowPointSelect: true,
+                //         cursor: 'pointer',
+                //         dataLabels: {
+                //             enabled: true,
+                //             format: '<b>{point.name}</b>: {point.percentage:.1f}%',
+                //             style: {
+                //                 color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                //             }
+                //         }
+                //     }
+                // },
+                series: [{
+                    type: 'column',
+                    name: 'Carpetas',
+                    colorByPoint: true,
+                    data: [<?php foreach ($adquisicionesDependencia as $adq) { ?> {
+                            name: '<?php echo $adq->dependencia_name; ?>',
+                            y: <?php echo $adq->adq; ?>
+                        },
+                        <?php } ?>
+                    ]
+                }]
+            });
+
+            function showValues() {
+                document.getElementById(
+                    'alpha-value'
+                ).innerHTML = chart.options.chart.options3d.alpha;
+                document.getElementById(
+                    'beta-value'
+                ).innerHTML = chart.options.chart.options3d.beta;
+                document.getElementById(
+                    'depth-value'
+                ).innerHTML = chart.options.chart.options3d.depth;
+            }
+
+            // Activate the sliders
+            document.querySelectorAll(
+                '#sliders input'
+            ).forEach(input => input.addEventListener('input', e => {
+                chart.options.chart.options3d[e.target.id] = parseFloat(e.target.value);
+                showValues();
+                chart.redraw(false);
+            }));
+
+            showValues();
         </script>
 
 

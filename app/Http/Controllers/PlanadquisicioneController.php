@@ -274,8 +274,8 @@ class PlanadquisicioneController extends Controller
         $requiproyectos = Requiproyecto::where('areas_id', auth()->user()->area->id)->pluck('detproyecto', 'id');
 
         // Formatear las fechas para pasarlas a la vista
-        $inventario->fechaInicial = \Carbon\Carbon::createFromFormat('Y-m-d', $inventario->fechaInicial)->format('d/m/Y');
-        $inventario->fechaFinal = \Carbon\Carbon::createFromFormat('Y-m-d', $inventario->fechaFinal)->format('d/m/Y');
+        // $inventario->fechaInicial = \Carbon\Carbon::createFromFormat('Y-m-d', $inventario->fechaInicial)->format('d/m/Y');
+        // $inventario->fechaFinal = \Carbon\Carbon::createFromFormat('Y-m-d', $inventario->fechaFinal)->format('d/m/Y');
 
         // Devolver la vista con los datos
         return view('admin.planadquisiciones.edit', compact(

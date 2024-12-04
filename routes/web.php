@@ -4,6 +4,8 @@ use App\Empresa;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\CustomForgotPasswordController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +26,9 @@ Route::get('/vista', function () {
     return view('vista');
 });
 Route::resource('empresa', 'EmpresaController')->only([
-    'index', 'edit', 'update'
+    'index',
+    'edit',
+    'update'
 ])->names('empresa');
 Route::resource('areas', 'AreaController')->except([
     'show',
@@ -45,9 +49,10 @@ Route::resource('subserie', 'FamiliaController')->except([
 Route::resource('soporte', 'FuenteController')->except([
     'show',
 ])->names('admin.fuentes');
-Route::resource('meses', 'MeseController')->only([
-    'index',
-])->names('admin.meses');
+Route::resource('actos', 'ActoController')->except([
+    'show',
+])->names('admin.actos');
+
 Route::resource('objeto', 'ModalidadeController')->except([
     'show',
 ])->names('admin.modalidades');
@@ -55,7 +60,8 @@ Route::resource('inventario', 'PlanadquisicioneController')->names('planadquisic
 route::get('retirar_producto/{planadquisicione}/de/{producto}', 'PlanadquisicioneController@retirar_producto')->name('retirar_producto');
 Route::get('exportar_planadquisiciones_excel/{planadquisicion}', 'PlanadquisicioneController@exportar_planadquisiciones_excel')->name('exportar_planadquisiciones_excel');
 Route::resource('productos', 'ProductoController')->except([
-    'show', 'destroy'
+    'show',
+    'destroy'
 ])->names('admin.productos');
 Route::get('importar_datos', function () {
     return view('admin.importar_datos');
@@ -111,7 +117,6 @@ Route::get('inventario/area/{areaId}', 'PlanadquisicioneController@indexByArea')
 // });
 
 
-use App\Http\Controllers\Auth\CustomForgotPasswordController;
 
 // Ruta para mostrar el formulario de solicitud de enlace de restablecimiento de contraseña
 Route::get('password/reset', [CustomForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
