@@ -17,6 +17,7 @@ class ActoController extends Controller
     {
         $this->middleware('auth');
     }
+    
 
     public function showOnlyAdmin()
     {

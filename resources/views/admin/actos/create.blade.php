@@ -89,7 +89,7 @@
                         <p id="fileSizeError" style="display:none; color:red;">El archivo no debe exceder los 20 MB.</p>
                     </div>
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         {!! Form::label('slug', 'Slug') !!}
                         {!! Form::text('slug', null, [
                             'class' => 'form-control',
@@ -98,7 +98,7 @@
                         @error('slug')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <!-- /.card -->
